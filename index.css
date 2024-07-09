@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: #4a74c2;
+    box-shadow: 0px 3px 15px #2b028a;
+
+}
+.nav-bar{
+display: flex;
+justify-content: space-between;
+padding: 1.5rem 7rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+ 
+}
+.logo h1{
+    align-items: center;
+}
+.jp {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1.1rem 12rem;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+/* nav list ul a lista centrealizamos no meio e em seguida tiramos os pontos da lista desordenada 
+apos fazer isso faz que todas as palavras da lista se unem so uma linha */
+.nav-item{
+    margin: 0 18px;
+    border-color: #2b028a;
+    transform: inherit;
+}
+/* o nav link e um separador as palavras ficam um pouco mais afastados um dos outros */
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+/* apartir daqui estamos fazendo responsivo e iteratividade  tentativa menu funcionar de uma 
+forma simples*/
+.login-button button {
+    border: none;
+    background-color: #0a7db3;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.login-button button a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.mobile-menu-icon {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+@media screen and (max-width: 730px) {
+    .nav-bar{
+        padding: 1.5rem 4rem;
+
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    /*deixamos transparente o ecesso da imagem so se concetrando o icone outra forma e com tag <i></i> 
+    */
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+.frente {
+    margin: 5%;
+    text-align: center;
+}
